@@ -321,3 +321,12 @@ footer
   animation:  3s ease forwards;
   font-size: 30px;
 }
+
+.Java
+{
+   margin: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5); 
+  border-radius: 30px;
+  padding: 24px 32px;
+}
