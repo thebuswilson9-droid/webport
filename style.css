@@ -1,5 +1,4 @@
-body 
-{
+body {
   background-image: url(grid.jpg);
   background-size: cover;
   margin: 0;
@@ -11,52 +10,46 @@ body
 
 /*ANIMATIONS*/
 
-@keyframes glowPulse 
-{
-  0%, 100% 
-  {
+@keyframes glowPulse {
+
+  0%,
+  100% {
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.2);
   }
 
-  50% 
-  {
+  50% {
     box-shadow: 0 0 24px rgba(255, 204, 0, 0.839),
-                0 0 48px rgba(180, 100, 255, 0.3);
-    border-color: rgba(255, 196, 0, 0.8); 
+      0 0 48px rgba(180, 100, 255, 0.3);
+    border-color: rgba(255, 196, 0, 0.8);
   }
 }
 
-@keyframes slideUp 
-{
-  from 
-  { 
-    opacity: 0; transform: translateY(40px); 
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
 
-  to   
-  { 
-    opacity: 1; transform: translateY(0); 
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@keyframes typing
-{
-  from 
-  {
+@keyframes typing {
+  from {
     width: 0;
   }
 
-  to
-  {
+  to {
     width: 100%;
   }
 }
 
 /* NAVBAR */
 
-.navbar 
-{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,8 +63,7 @@ body
   animation: slideUp 2s ease forwards;
 }
 
-.logo 
-{
+.logo {
   width: 40px;
   height: 40px;
   object-fit: cover;
@@ -79,20 +71,18 @@ body
   margin-right: auto;
 }
 
-.navbar a 
-{
+.navbar a {
   color: #f5f5dc;
   margin: 0 15px;
 }
 
-.navbar a:hover, .navbar button:hover 
-{
+.navbar a:hover,
+.navbar button:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: #ffc400;
 }
 
-.navbar button 
-{
+.navbar button {
   color: #f5f5dc;
   font-weight: bold;
   padding: 10px 20px;
@@ -100,21 +90,18 @@ body
   transition: background-color 0.3s ease;
 }
 
-.nav-button 
-{
+.nav-button {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid #ffffff;
 }
 
 /* DROPDOWN */
 
-.dropdown 
-{
+.dropdown {
   position: relative;
 }
 
-.dropdown-menu 
-{
+.dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
@@ -130,8 +117,7 @@ body
   z-index: 999;
 }
 
-.dropdown-menu a 
-{
+.dropdown-menu a {
   display: block;
   padding: 10px 20px;
   margin: 0;
@@ -140,21 +126,18 @@ body
   text-align: left;
 }
 
-.dropdown-menu a:hover 
-{
+.dropdown-menu a:hover {
   background: rgba(255, 255, 255, 0.15);
   color: #ffc400;
 }
 
-.dropdown:hover .dropdown-menu 
-{
+.dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* SEARCH */
 
-.search-wrap 
-{
+.search-wrap {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -166,8 +149,7 @@ body
   -webkit-backdrop-filter: blur(10px);
 }
 
-.search-wrap input 
-{
+.search-wrap input {
   background: transparent;
   border: none;
   outline: none;
@@ -176,21 +158,18 @@ body
   width: 160px;
 }
 
-.search-wrap input::placeholder 
-{
+.search-wrap input::placeholder {
   color: rgba(255, 255, 255, 0.45);
 }
 
 /* CONTENTS */
 
-.first
-{
+.first {
   text-align: center;
   animation: slideUp 3s ease forwards;
 }
 
-.main-content 
-{
+.main-content {
   text-align: center;
   padding: 30px;
   margin: 20px 50px;
@@ -202,8 +181,7 @@ body
   animation: slideUp 3s ease forwards;
 }
 
-.glass0 
-{ 
+.glass0 {
   padding: 20px;
   margin: 250px;
   background-color: rgba(35, 35, 35, 0.1);
@@ -215,14 +193,12 @@ body
   animation: slideUp 3s ease forwards;
 }
 
-.glass0:hover 
-{
+.glass0:hover {
   color: #ffc400;
   animation: glowPulse 2s ease-in-out infinite
 }
 
-.description 
-{
+.description {
   padding: 20px;
   margin: 20px 0 20px;
   background-color: rgba(35, 35, 35, 0.3);
@@ -232,13 +208,13 @@ body
   font-size: clamp(10px, 3vw, 2rem);
   font-weight: 100;
   text-transform: uppercase;
-  animation: slideUp 3s ease forwards;;
+  animation: slideUp 3s ease forwards;
+  ;
 }
 
 /* FOOTER */
 
-footer 
-{
+footer {
   text-align: center;
   font-size: 10px;
   margin-top: 24px;
@@ -249,27 +225,24 @@ footer
 
 /*ABOUT ME*/
 
-.Aboutme 
-{
+.Aboutme {
   margin: 40px;
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5); 
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   padding: 24px 32px;
   animation: glowPulse 2s ease-in-out infinite, slideUp 3s ease forwards;
   text-align: center;
 }
 
-.abtcontent 
-{
+.abtcontent {
   font-size: 30px;
   display: flex;
   align-items: center;
   margin: 50px 50px 20px 50px;
 }
 
-.abtcontent h1 
-{
+.abtcontent h1 {
   width: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -277,9 +250,8 @@ footer
   animation: typing 1.5s steps(17) forwards;
 }
 
-.abtcontent h2 
-{
-  width: 0;      
+.abtcontent h2 {
+  width: 0;
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
@@ -287,78 +259,70 @@ footer
   animation-delay: 3s;
 }
 
-.abt-text 
-{
-  flex: 1;       
+.abt-text {
+  flex: 1;
   text-align: left;
 }
 
-.abt-image 
-{
-  flex: 1;       
+.abt-image {
+  flex: 1;
   display: flex;
   justify-content: flex-end;
 }
 
-.abt-image img 
-{
+.abt-image img {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border-radius: 50%;        
+  border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  animation: slideUp 3s ease forwards; 
+  animation: slideUp 3s ease forwards;
 }
 
-.PROJECT
-{
+.PROJECT {
   margin: 100px;
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5); 
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 30px;
   padding: 24px 32px;
   text-align: center;
-  animation:  3s ease forwards;
+  animation: 3s ease forwards;
   font-size: 30px;
-} 
+}
 
-.Java
-{
+.Java {
   margin: 100px;
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgb(255, 196, 0); 
+  border: 1px solid rgb(255, 196, 0);
   border-radius: 30px;
   padding: 24px 32px;
 }
 
-.Csharp
-{
+.Csharp {
   margin: 100px;
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgb(30, 0, 255); 
+  border: 1px solid rgb(30, 0, 255);
   border-radius: 30px;
   padding: 24px 32px;
 }
 
-.JavaScript
-{
-   margin: 100px;
+.JavaScript {
+  margin: 100px;
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgb(255, 0, 0); 
+  border: 1px solid rgb(255, 0, 0);
   border-radius: 30px;
   padding: 24px 32px;
 }
 
 /* CONTACT DESIGN */
-.SOC
-{
-  margin: 100px;
+.SOC {
+  margin: 300px 0px 0px 0px;
   background: rgba(246, 1, 1, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5); 
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 30px;
   padding: 24px 32px;
   text-align: center;
-  animation:  3s ease forwards;
+  animation: 3s ease forwards;
   animation-delay: 5s;
   font-size: 30px;
 }
